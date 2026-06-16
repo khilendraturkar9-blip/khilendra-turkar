@@ -1,0 +1,103 @@
+# Q1
+import numpy as np 
+arr = np.array([10,20,30,40,50])
+print(arr)
+
+# Q2
+arr = np.array([5,10,15,20,25])
+print(arr[0])
+print(arr[-1])
+print(arr[2:3])
+
+# Q3
+arr = np.array([1,2,3,4,5])
+arr[2]= 100
+print(arr)
+
+# Q4
+
+arr = np.array([11,22,33,44,55])
+print(len(arr))
+
+# level 2
+# Q5 Add 10
+arr = np.array([1,2,3,4,5])
+arr+=10
+print(arr)
+
+# Q6 multiply 
+arr = np.array([2,4,6,8])
+arr*=2
+print(arr)
+
+# Q7 Square namburs
+arr = np.array([1,2,3,4,5])
+arr**=2
+print(arr)
+
+# Q8 find sum
+marks = np.array([80,70,90,60,85])
+print("Total",np.sum(marks))
+
+# Q9find average
+marks = np.array([80,70,90,60,85])
+print("Average",np.mean(marks))
+
+# Q10 find highest and lowest
+marks = np.array([45,90,23,67,88])
+print("Highest",np.max(marks))
+print("lowest",np.min(marks))
+
+# LEVEL 4 Array Creation
+# Q11 Create an array of 10 zeros
+zeros = np.zeros(10)
+print(zeros)
+
+# Q12 Create an array of 8 ones
+ones = np.ones(8)
+print(ones)  
+
+# Q13 Range
+range_arr = np.arange(1,11)
+print(range_arr)
+
+# Q14 Even numbers
+even_arr = np.arange(2,21,2)
+print(even_arr)
+
+# level 5
+# 2D array
+# Q15 Create matrix
+matrix = np.array([[1,2],
+                   [3,4]])
+print(matrix)
+
+# Q16 Access element
+arr = np.array([[10,20,30],
+               [40,50,60]])
+print(arr)
+
+# Q17
+# arr = np.array([[1,2,3],
+#                 [4,5,6],
+#                 [7,8,9]])
+# np.shape()
+
+# Q18 
+
+marks = np.array([78,85,92,67,88])
+print(sum(marks))
+print(max(marks))
+print(min(marks))
+
+
+# Q19 Add 5 grace marks to every student
+
+marks = np.array([83,90,97,72,93])
+grace_marks = marks+5
+print(grace_marks)
+
+# Q20.Print only students who scored more than 80
+marks = np.array([83,90,97,72,93])
+result = marks[marks>80]
+print(result)
