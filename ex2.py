@@ -1,23 +1,30 @@
-import requests
-from bs4 import BeautifulSoup
+# student = {
+#     "name":"rahul",
+#     "age":20,
+#     "city":"pune"
+# }
 
-url = "https://www.playstation.com/en-in/"
-response = requests.get(url)
+# print(student)
+# print(student["name"])
+# print(student["city"])
 
-soup = BeautifulSoup(response.text,"html.parser")
+# student["location"] = "kolkata"
+# print(student)
+# del student
 
-title = soup.title.text
-print(f"Title:",{title})
 
-h1 = soup.find("h1")
-print({h1.text})
+# Student mark system
+# marks = {
+#     "rahul":85,
+#     "priya":90,
+#     "rohan":78
+# }
 
-p = soup.find("p")
-print({p.text})
+#tuples
+list1 =[1,2,3]
+list1[0] = 100
+print(list1)
 
-links = soup.find_all('a')
-
-for link in links:
-    print(link.text)
-    print(link.get("href"))
-
+tuple = (1,2,3)
+tuple[0]=100
+print(tuple)
